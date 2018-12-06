@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body>
+
     <nav-header></nav-header>
     <nav-breader></nav-breader>
     <div class="accessory-result-page">
@@ -46,16 +46,13 @@
       </div>
     </div>
     <nav-footer></nav-footer>
-    </body>
+
   </div>
 
 </template>
 
 <script>
   import './../assets/css/base.css';
-  import './../assets/css/nav-header.css';
-  import './../assets/css/nav-bread.css';
-  import './../assets/css/nav-footer.css';
   import './../assets/css/goods-list.css';
   import NavHeader from './../components/NavHeader.vue';
   import NavFooter from './../components/NavFooter.vue';
@@ -72,5 +69,10 @@
 </script>
 
 <style scoped>
-
+  /** the page max width **/
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 </style>
